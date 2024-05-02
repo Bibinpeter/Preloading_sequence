@@ -1,17 +1,21 @@
-import 'package:flutter/material.dart';
+ 
 
-void main() {
-  runApp(const MyApp());
-}
+ import 'package:flutter/material.dart';
+import 'package:preloading/screen/homescreen.dart';
 
-class MyApp extends StatelessWidget {
+void main()=> runApp(const MyApp());
+
+class MyApp extends StatelessWidget{
+  final String title="preload image into Cache";
+
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp();
-    
-    }
-    }
-      
+  Widget build(BuildContext context)=>MaterialApp(
+    title: title,
+    theme: ThemeData(primarySwatch: Colors.deepOrange),
+  home: MainPage(title:title),
+  );
+}
+
+ 

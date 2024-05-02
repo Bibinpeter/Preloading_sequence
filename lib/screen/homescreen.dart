@@ -49,6 +49,7 @@ class _MainPageState extends State<MainPage> {
           ],
         ),
         body: ListView.separated(
+          physics:const BouncingScrollPhysics(),
           padding: const EdgeInsets.all(12),
           itemCount: fruits.length,
            separatorBuilder: (context, index) => const Divider(),

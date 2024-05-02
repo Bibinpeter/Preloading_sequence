@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   network_to_file_image: ^6.0.1
   skeleton_text: ^3.0.1
+  animation_list: ^3.0.0
   
     
 dev_dependencies:
